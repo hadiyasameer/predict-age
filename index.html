@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Predict Age</title>
+
+</head>
+
+<body>
+    <header></header>
+
+    <main style="display:flex; justify-content: center; align-items: center; height: 100vh; width: 90vw;">
+        <div class="form"
+            style="height: 500px; max-width:500px; display:flex; flex-direction: column; justify-content: center; background-color: rgb(156, 182, 223); padding: 10px; color:rgb(8, 51, 109); border-radius: 8px;">
+            <h1 style="margin: 0px 30px 30px 40px; font-size: 35px;">Let's predict your age!</h1>
+            <br>
+            <form id="feedbackform" name="feedbackform" style="margin-left: 55px; margin-right: 55px;">
+                <label for="name" style="font-size: 20px;">Name :
+                    <span style="color: red;">*</span>
+                </label><br>
+                <input type="text" id="name" name="name" style="height: 30px; width: 280px; border: none;">
+                <br>
+                <label style="color: red;" id="nameval"></label>
+                <br>
+                <label for="email" style="font-size: 20px;">Email :
+                    <span style="color: red;">*</span>
+                </label><br>
+                <input type="email" id="email" name="email" style="height: 30px; width: 280px; border: none;">
+                <br>
+                <label style="color: red;" id="emailval"></label>
+                <br>
+                <br>
+                <button type="submit" id="button"
+                    style="height: 50px; width: 284px; border: none; cursor: pointer; color: white; background-color: rgb(8, 51, 109); ">Predict
+                    age!</button>
+                <br><br>
+                <label id="age" style="color: rgb(8, 51, 109); font-size: 20px;"></label>
+            </form>
+        </div>
+
+        <script src="./index.js"></script>
+</body>
+
+</html>
